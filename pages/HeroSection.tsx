@@ -7,6 +7,9 @@ const HeroSection = () => {
     "
     >
       <NavBar />
+      <div>
+        
+      </div>
     </section>
   )
 }

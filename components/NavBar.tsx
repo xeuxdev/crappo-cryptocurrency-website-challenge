@@ -5,6 +5,7 @@ import { useState } from "react"
 type Props = {
   name: string
 }
+const linkArray = ["product", "features", "about", "contact"]
 
 const NavBar = () => {
   const [isOpen, setisOpen] = useState(false)
@@ -17,10 +18,9 @@ const NavBar = () => {
       <div className="hidden lg:flex items-center space-x-14">
         {/* navmenu */}
         <div className="flex items-center w-[339px] h-7 space-x-8">
-          <NavLink name="product" />
-          <NavLink name="features" />
-          <NavLink name="about" />
-          <NavLink name="contact" />
+          {linkArray.map((item, index) => (
+            <NavLink key={index} name={item} />
+          ))}
         </div>
         <div className="flex items-center w-[221px] space-x-6">
           <NavLink name="login" />
@@ -88,10 +88,9 @@ function MobileMenu() {
       transition={{ duration: 0.5 }}
     >
       <div className="flex items-center justify-center flex-col gap-5">
-        <NavLink name="product" />
-        <NavLink name="features" />
-        <NavLink name="about" />
-        <NavLink name="contact" />
+        {linkArray.map((item, index) => (
+          <NavLink key={index} name={item} />
+        ))}
       </div>
       <div className="flex items-center justify-center space-x-6">
         <NavLink name="login" />
