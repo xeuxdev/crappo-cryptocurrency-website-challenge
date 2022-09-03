@@ -4,7 +4,14 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,tsx,jsx}",
   ],
+
   theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1202px",
+    },
     container: {
       center: true,
     },
@@ -34,7 +41,6 @@ module.exports = {
       body_st_rg: ["1.125rem", { lineHeight: "150%", fontWeight: "400" }],
       body_sm_md: ["1rem", { lineHeight: "150%", fontWeight: "500" }],
       body_sm_rg: ["1rem", { lineHeight: "1.75rem", fontWeight: "400" }],
-      
     },
     extend: {},
   },

@@ -1,8 +1,7 @@
-import React from "react"
 
 type Props = {}
 
 const Header = (props: Props) => {
-  return <div className="">header</div>
+  return <header className="">header</header>
 }
 export default Header
