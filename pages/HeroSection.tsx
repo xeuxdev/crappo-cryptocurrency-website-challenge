@@ -5,14 +5,15 @@ import SvgButton from "../components/SvgButton"
 const HeroSection = () => {
   return (
     <section
-      className="bg-primary h-full min-h-[850px] px-5 md:px-7 xl:px-0 pt-8 md:pt-16
+      className="bg-[url('/assets/hero-bg.png')] h-full
+       xl:h-[850px] px-5 md:px-7 xl:px-0 pt-8 md:pt-16
     "
     >
       <NavBar />
       <div className="container mt-10 md:mt-[50px]">
         <div className="flex items-center justify-between flex-col lg:flex-row">
           {/* text */}
-          <div className="lg:flex-[50%] xl:w-[588px] xl:h-[468px]">
+          <div className="md:text-center lg:text-left xl:w-[588px] xl:h-[468px] mb-3 lg:mb-0">
             {/* black friday stuff */}
             <div className="flex items-center h-9 w-full lg:w-[365px] rounded-full p-1 space-x-4 bg-white/10 mb-6">
               <span className="h-full px-2 pt-[2px] pb-[2px] uppercase bg-white grid place-items-center text-primary rounded-full text-body_sm_rg">
@@ -36,7 +37,13 @@ const HeroSection = () => {
             </div>
           </div>
           {/* image */}
-          <div className="flex-[50%] xl:w-[604px] xl:h-[585.15px]"></div>
+          <div className=" w-[340px] h-[300px] xl:w-[604px] xl:h-[585.15px] relative">
+            <Image
+              src={"/assets/hero-img.png"}
+              alt="hero image"
+              layout="fill"
+            />
+          </div>
         </div>
       </div>
     </section>
