@@ -1,6 +1,14 @@
 import NavBar from "../components/NavBar"
 import Image from "next/image"
 import SvgButton from "../components/SvgButton"
+import { motion } from "framer-motion"
+
+const heroVariant = {
+  blackFriday: {
+    hide: { opacity: 0, scale: 0 },
+    show: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  },
+}
 
 const HeroSection = () => {
   return (
@@ -15,14 +23,19 @@ const HeroSection = () => {
           {/* text */}
           <div className="md:text-center lg:text-left xl:w-[588px] xl:h-[468px] mb-6 lg:mb-0">
             {/* black friday stuff */}
-            <div className="flex items-center h-9 w-fit xs:pr-2 sm:pr-5 lg:w-[365px] rounded-full p-1 space-x-4 bg-white/10 mb-6">
+            <motion.div
+              className="flex items-center h-9 w-fit xs:pr-2 sm:pr-5 lg:w-[365px] 
+            rounded-full p-1 space-x-4 bg-white/10 mb-6"
+              initial={heroVariant.blackFriday.hide}
+              whileInView={heroVariant.blackFriday.show}
+            >
               <span className="h-full px-2 pt-[2px] pb-[2px] uppercase bg-white grid place-items-center text-primary rounded-full text-[12px] xs:text-body_sm_rg">
                 75% save
               </span>
               <span className="text-[12px] xs:text-body_sm_rg text-white">
                 For the Black Friday weekend
               </span>
-            </div>
+            </motion.div>
             <div>
               <h1 className="text-h3 md:text-h1 text-white mb-5">
                 Fastest & secure platform to invest in crypto
