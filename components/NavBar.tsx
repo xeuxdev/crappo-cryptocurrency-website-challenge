@@ -78,21 +78,46 @@ function Register() {
   )
 }
 
+const menuVariant = {
+  show: {
+    x: [200, 0],
+    opacity: [0, 1],
+    transition: { duration: 0.7, delayChildren: 0.5 },
+  },
+  exit: {
+    opacity: [1, 0],
+    x: [0, 200],
+    transition: { duration: 0.5, delayChildren: 0.1 },
+  },
+}
+
 function MobileMenu() {
   return (
     <motion.div
-      className="fixed top-0 right-0 w-3/4 h-full lg:hidden bg-accent/50 z-20 flex items-center justify-center flex-col gap-14"
+      className="fixed top-0 right-0 w-3/4 h-full lg:hidden bg-secondary z-20 flex items-center justify-center flex-col gap-14"
       initial={{ opacity: 0 }}
-      whileInView={{ x: [200, 0], opacity: [0, 1] }}
-      exit={{ opacity: [1, 0], x: [0, 200] }}
-      transition={{ duration: 0.5 }}
+      variants={menuVariant}
+      whileInView={"show"}
+      exit={"exit"}
     >
-      <div className="flex items-center justify-center flex-col gap-5">
+      <motion.div
+        className="flex items-center justify-center flex-col gap-5"
+        initial={{ opacity: 0 }}
+        variants={menuVariant}
+        whileInView={"show"}
+        exit={"exit"}
+      >
         {linkArray.map((item, index) => (
           <NavLink key={index} name={item} />
         ))}
-      </div>
-      <div className="flex items-center justify-center space-x-6">
+      </motion.div>
+      <motion.div
+        className="flex items-center justify-center space-x-6"
+        initial={{ opacity: 0 }}
+        variants={menuVariant}
+        whileInView={"show"}
+        exit={"exit"}
+      >
         <NavLink name="login" />
         <span className="h-6 bg-light_bg w-[1px]"></span>
         <motion.div
@@ -102,7 +127,7 @@ function MobileMenu() {
         >
           <Register />
         </motion.div>
-      </div>
+      </motion.div>
     </motion.div>
   )
 }
