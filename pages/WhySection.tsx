@@ -1,5 +1,5 @@
 import Image from "next/image"
-const FeatureSection = () => {
+const WhySection = () => {
   return (
     <section className="bg-primary w-full min-h-[865px] py-[100px] relative px-5 md:px-7 xl:px-0 overflow-x-hidden">
       <div className="container">
@@ -12,7 +12,9 @@ const FeatureSection = () => {
         {/* content */}
         <div className="flex items-center justify-center flex-col lg:flex-row lg:space-x-[70px] lg:h-[473px] border-white border">
           {/* illustration */}
-          <div className="lg:h-full lg:w-[650px] border-white border"></div>
+          <div className="lg:h-full lg:w-[650px] border-white border">
+            <Image src={"/assets/why-img.png"} alt=""/>
+          </div>
           <div className="lg:h-[318.89px] lg:w-[480px] border-white border"></div>
         </div>
       </div>
@@ -20,7 +22,7 @@ const FeatureSection = () => {
   )
 }
 
-export default FeatureSection
+export default WhySection
 
 const FeatureNumbers = () => {
   return (
