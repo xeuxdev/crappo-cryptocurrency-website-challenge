@@ -6,15 +6,19 @@ import { motion } from "framer-motion"
 const heroVariant = {
   blackFriday: {
     hide: { opacity: 0, scale: 0 },
-    show: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    show: { opacity: 1, scale: 1, transition: { duration: 0.75 } },
   },
   heroText: {
     hide: { opacity: 0, x: -100 },
     show: { opacity: 1, x: 0, transition: { duration: 0.75 } },
   },
+  heroPara: {
+    hide: { opacity: 0, y: -100 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.75 } },
+  },
   heroImage: {
-    hide: { opacity: 0, x: 100 },
-    show: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+    hide: { opacity: 0, scale: 0 },
+    show: { opacity: 1, scale: 1, transition: { duration: 1.5 } },
   },
 }
 
@@ -36,7 +40,7 @@ const HeroSection = () => {
             rounded-full p-1 space-x-4 bg-white/10 mb-6"
               initial={heroVariant.blackFriday.hide}
               whileInView={heroVariant.blackFriday.show}
-              viewport={{ once: true }}
+              // viewport={{ once: true }}
             >
               <span className="h-full px-2 pt-[2px] pb-[2px] uppercase bg-white grid place-items-center text-primary rounded-full text-[12px] xs:text-body_sm_rg">
                 75% save
@@ -45,27 +49,33 @@ const HeroSection = () => {
                 For the Black Friday weekend
               </span>
             </motion.div>
-            <motion.div
-              initial={heroVariant.heroText.hide}
-              whileInView={heroVariant.heroText.show}
-              viewport={{ once: true }}
-            >
-              <h1 className="text-h3 md:text-h1 text-white mb-5">
+            <div>
+              <motion.h1
+                className="text-h3 md:text-h1 text-white mb-5"
+                initial={heroVariant.heroText.hide}
+                whileInView={heroVariant.heroText.show}
+                // viewport={{ once: true }}
+              >
                 Fastest & secure platform to invest in crypto
-              </h1>
-              <p className="text-body_sm_rg text-gray_5 lg:w-[425px] mb-7 lg:mb-10">
+              </motion.h1>
+              <motion.p
+                className="text-body_sm_rg text-gray_5 lg:w-[425px] mb-7 lg:mb-10"
+                initial={heroVariant.heroPara.hide}
+                whileInView={heroVariant.heroPara.show}
+                // viewport={{ once: true }}
+              >
                 Buy and sell cryptocurrencies, trusted by 10M wallets with over
                 $30 billion in transactions.
-              </p>
+              </motion.p>
               <SvgButton name="Try For FREE" />
-            </motion.div>
+            </div>
           </div>
           {/* image */}
           <motion.div
             className=" w-full h-[400px] md:h-[630px] lg:h-[550px] xl:w-[604px] xl:h-[585.15px] relative z-40"
             initial={heroVariant.heroImage.hide}
             whileInView={heroVariant.heroImage.show}
-            viewport={{ once: true }}
+            // viewport={{ once: true }}
           >
             <Image
               src={"/assets/hero-img.png"}

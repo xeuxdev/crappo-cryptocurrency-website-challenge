@@ -1,5 +1,11 @@
 import Image from "next/image"
 import PlainButton from "../components/PlainButton"
+
+// const whyVariants: {
+//   hide: { opacity: 0 }
+//   show: { opacity: 1 }
+// }
+
 const WhySection = () => {
   return (
     <section className="bg-primary w-full min-h-[865px] py-[100px] relative px-5 md:px-7 xl:px-0 overflow-x-hidden">
