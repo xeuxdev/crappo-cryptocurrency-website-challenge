@@ -25,19 +25,35 @@ const FeatureSection = () => {
           {/* card two */}
           <div className="w-[334px] h-[92px] flex items-center space-x-6">
             <div className="w-20 h-20 rounded-full bg-white/10 grid place-items-center">
-              <div className="w-8 h-8 relative">
+              <div className="w-10 h-10 relative">
                 <Image
-                  src={"/assets/icon-barChat.svg"}
-                  alt="currency exchanged"
+                  src={"/assets/icon-person.svg"}
+                  alt="wallets investor"
                   layout="fill"
                 />
               </div>
             </div>
             <div className="space-y-1">
-              <p className="text-h2 text-white">$30B</p>
+              <p className="text-h2 text-white">10M+</p>
               <p className="text-body_sm_rg text-gray_5">
-                Digital Currency Exchanged
+                Trusted Wallets Investor
               </p>
+            </div>
+          </div>
+          {/* card three */}
+          <div className="w-[334px] h-[92px] flex items-center space-x-6">
+            <div className="w-20 h-20 rounded-full bg-white/10 grid place-items-center">
+              <div className="w-10 h-10 relative">
+                <Image
+                  src={"/assets/icon-earth.svg"}
+                  alt="countries supported"
+                  layout="fill"
+                />
+              </div>
+            </div>
+            <div className="space-y-1">
+              <p className="text-h2 text-white">195</p>
+              <p className="text-body_sm_rg text-gray_5">Countries Supported</p>
             </div>
           </div>
         </div>
