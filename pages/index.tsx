@@ -1,5 +1,6 @@
 import type { NextPage } from "next"
 import Head from "next/head"
+import FeatureSection from "./FeatureSection"
 import HeroSection from "./HeroSection"
 
 const Home: NextPage = () => {
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
 
       <main className={"scroll-smooth"}>
         <HeroSection />
+        <FeatureSection />
       </main>
 
       <footer className={""}></footer>
