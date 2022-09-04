@@ -22,6 +22,7 @@ const SvgButton = ({ name }: Props) => {
         variants={svgVariant}
         initial="hideName"
         whileInView={"showName"}
+        viewport={{ once: true }}
       >
         {name}
       </motion.span>
