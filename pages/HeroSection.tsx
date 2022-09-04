@@ -8,6 +8,10 @@ const heroVariant = {
     hide: { opacity: 0, scale: 0 },
     show: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
   },
+  heroText: {
+    hide: { opacity: 0, x: -100 },
+    show: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  },
 }
 
 const HeroSection = () => {
@@ -37,13 +41,21 @@ const HeroSection = () => {
               </span>
             </motion.div>
             <div>
-              <h1 className="text-h3 md:text-h1 text-white mb-5">
+              <motion.h1
+                className="text-h3 md:text-h1 text-white mb-5"
+                initial={heroVariant.heroText.hide}
+                whileInView={heroVariant.heroText.show}
+              >
                 Fastest & secure platform to invest in crypto
-              </h1>
-              <p className="text-body_sm_rg text-white lg:w-[425px] mb-7 lg:mb-10">
+              </motion.h1>
+              <motion.p
+                className="text-body_sm_rg text-white lg:w-[425px] mb-7 lg:mb-10"
+                initial={heroVariant.heroText.hide}
+                whileInView={heroVariant.heroText.show}
+              >
                 Buy and sell cryptocurrencies, trusted by 10M wallets with over
                 $30 billion in transactions.
-              </p>
+              </motion.p>
               <SvgButton name="Try For FREE" />
             </div>
           </div>

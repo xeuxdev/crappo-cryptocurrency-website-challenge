@@ -82,12 +82,24 @@ const menuVariant = {
   show: {
     x: [200, 0],
     opacity: [0, 1],
-    transition: { duration: 0.7, delayChildren: 0.5 },
+    transition: { duration: 0.7 },
   },
   exit: {
     opacity: [1, 0],
     x: [0, 200],
-    transition: { duration: 0.5, delayChildren: 0.1 },
+    transition: { duration: 0.5 },
+  },
+}
+const navItem = {
+  show: {
+    x: [100, 0],
+    opacity: [0, 1],
+    transition: { duration: 0.7 },
+  },
+  exit: {
+    opacity: [1, 0],
+    x: [0, 100],
+    transition: { duration: 0.5 },
   },
 }
 
@@ -103,9 +115,8 @@ function MobileMenu() {
       <motion.div
         className="flex items-center justify-center flex-col gap-5"
         initial={{ opacity: 0 }}
-        variants={menuVariant}
-        whileInView={"show"}
-        exit={"exit"}
+        whileInView={navItem.show}
+        exit={navItem.exit}
       >
         {linkArray.map((item, index) => (
           <NavLink key={index} name={item} />
