@@ -6,7 +6,20 @@ import { whyVariants } from "../variants/whyVariants"
 
 const WhySection = () => {
   return (
-    <section className="bg-primary w-full min-h-[865px] py-[100px] relative px-5 md:px-7 xl:px-0 overflow-x-hidden">
+    <section className="bg-primary w-full min-h-[865px] py-[100px] relative px-5 md:px-7 xl:px-0 overflow-x-hidden ">
+      <span
+        className="block absolute top-16 md:top-24 -right-36 md:-right-28 w-[260px] h-[260px]"
+        aria-hidden="true"
+      >
+        <Image src={"/assets/why-model-1.png"} alt="" layout="fill" />
+      </span>
+      <span
+        className="absolute w-[135px] h-[135px] left-[75%] lg:left-[90%] top-[457px] lg:top-[620px]"
+        aria-hidden="true"
+      >
+        <Image src={"/assets/why-model-2.png"} alt="" layout="fill" />
+      </span>
+
       <div className="container">
         <motion.div
           className="flex items-center flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-[99px] mb-24"
@@ -16,14 +29,9 @@ const WhySection = () => {
         >
           <FeatureNumbers />
         </motion.div>
-        <span
-          className="block absolute top-16 md:top-24 -right-36 md:-right-28 w-[260px] h-[260px]"
-          aria-hidden="true"
-        >
-          <Image src={"/assets/why-model-1.png"} alt="" layout="fill" />
-        </span>
+
         {/* content */}
-        <div className="flex items-center justify-center flex-col-reverse lg:flex-row lg:space-x-[70px] lg:h-[473px]">
+        <div className="flex items-center justify-center flex-col-reverse lg:flex-row lg:space-x-[70px] lg:h-[473px] z-40">
           {/* illustration */}
           <motion.div
             className="w-full h-[330px] md:h-[473px] lg:h-full lg:w-[650px] relative"
@@ -36,6 +44,9 @@ const WhySection = () => {
               alt="illustration on why to choose crappo"
               layout="fill"
             />
+            <div className="absolute flex w-full h-full z-10 -bottom-[30px] -left-[26px] lg:-left-[54px] ">
+              <Image src={"/assets/why-ribbon.png"} alt="" layout="fill" />
+            </div>
           </motion.div>
           {/* text */}
           <div className="lg:h-[318.89px] lg:w-[480px] text-center lg:text-left">

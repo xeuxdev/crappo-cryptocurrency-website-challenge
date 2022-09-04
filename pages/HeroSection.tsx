@@ -22,6 +22,7 @@ const HeroSection = () => {
               initial={heroVariant.blackFriday.hide}
               whileInView={heroVariant.blackFriday.show}
               viewport={{ once: true }}
+              
             >
               <span className="h-full px-2 pt-[2px] pb-[2px] uppercase bg-white grid place-items-center text-primary rounded-full text-[12px] xs:text-body_sm_rg">
                 75% save
