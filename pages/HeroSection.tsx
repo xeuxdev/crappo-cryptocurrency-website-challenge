@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <section
       className="bg-[url('/assets/hero-bg.png')] h-full
-       xl:h-[850px] px-5 md:px-7 xl:px-0 pt-8 md:pt-16
+       xl:h-[850px] px-5 md:px-7 xl:px-0 pt-8 md:pt-16 overflow-hidden pb-16 lg:pb-0
     "
     >
       <NavBar />
@@ -48,12 +48,15 @@ const HeroSection = () => {
             </div>
           </div>
           {/* image */}
-          <div className=" w-full h-[400px] md:h-[630px] xl:w-[604px] xl:h-[585.15px] relative">
+          <div className=" w-full h-[400px] md:h-[630px] lg:h-[550px] xl:w-[604px] xl:h-[585.15px] relative z-40">
             <Image
               src={"/assets/hero-img.png"}
               alt="hero image"
               layout="fill"
+              priority={true}
             />
+
+            <div className="absolute w-32 h-[997px] hidden lg:flex -left-[200px] -bottom-[490px] -z-10 bg-white/5 rotate-[60deg] "></div>
           </div>
         </div>
       </div>
