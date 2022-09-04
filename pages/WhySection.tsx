@@ -12,10 +12,14 @@ const WhySection = () => {
           className="flex items-center flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-[99px] mb-24"
           initial={whyVariants.numbers.hide}
           whileInView={whyVariants.numbers.show}
+          viewport={{ once: true }}
         >
           <FeatureNumbers />
         </motion.div>
-        <span className="block absolute top-16 md:top-24 -right-36 md:-right-28 w-[260px] h-[260px]">
+        <span
+          className="block absolute top-16 md:top-24 -right-36 md:-right-28 w-[260px] h-[260px]"
+          aria-hidden="true"
+        >
           <Image src={"/assets/why-model-1.png"} alt="" layout="fill" />
         </span>
         {/* content */}
@@ -25,6 +29,7 @@ const WhySection = () => {
             className="w-full h-[330px] md:h-[473px] lg:h-full lg:w-[650px] relative"
             initial={whyVariants.illustration.hide}
             whileInView={whyVariants.illustration.show}
+            viewport={{ once: true }}
           >
             <Image
               src={"/assets/why-img.png"}
@@ -34,13 +39,23 @@ const WhySection = () => {
           </motion.div>
           {/* text */}
           <div className="lg:h-[318.89px] lg:w-[480px] text-center lg:text-left">
-            <h2 className="text-h2 text-white mb-6">
+            <motion.h2
+              className="text-h2 text-white mb-6"
+              initial={whyVariants.head.hide}
+              whileInView={whyVariants.head.show}
+              viewport={{ once: true }}
+            >
               Why you should choose CRAPPO
-            </h2>
-            <p className="text-gray_5 text-body_sm_rg mb-8">
+            </motion.h2>
+            <motion.p
+              className="text-gray_5 text-body_sm_rg mb-8"
+              initial={whyVariants.para.hide}
+              whileInView={whyVariants.para.show}
+              viewport={{ once: true }}
+            >
               Experience the next generation cryptocurrency platform. No
               financial borders, extra fees, and fake reviews.
-            </p>
+            </motion.p>
             <PlainButton name="learn more" />
           </div>
         </div>
