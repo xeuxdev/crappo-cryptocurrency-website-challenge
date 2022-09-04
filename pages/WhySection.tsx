@@ -1,31 +1,60 @@
 import Image from "next/image"
 import PlainButton from "../components/PlainButton"
+import { motion } from "framer-motion"
 
-// const whyVariants: {
-//   hide: { opacity: 0 }
-//   show: { opacity: 1 }
-// }
+const whyVariants = {
+  numbers: {
+    hide: { opacity: 0, y: 150 },
+    show: { opacity: 1, y: 0, transition: { duration: 1.75 } },
+  },
+  illustration: {
+    hide: { opacity: 0, y: -150, scale: 0 },
+    show: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: { duration: 1.75, delay: 0.15 },
+    },
+  },
+  head: {
+    hide: { opacity: 0, x: -150, scale: 0 },
+    show: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      transition: { duration: 1.75, delay: 0.25 },
+    },
+  },
+}
 
 const WhySection = () => {
   return (
     <section className="bg-primary w-full min-h-[865px] py-[100px] relative px-5 md:px-7 xl:px-0 overflow-x-hidden">
       <div className="container">
-        <div className="flex items-center flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-[99px] mb-24">
+        <motion.div
+          className="flex items-center flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-[99px] mb-24"
+          initial={whyVariants.numbers.hide}
+          whileInView={whyVariants.numbers.show}
+        >
           <FeatureNumbers />
-        </div>
-        <span className="block absolute top-24 -right-28 w-[260px] h-[260px]">
+        </motion.div>
+        <span className="block absolute top-16 md:top-24 -right-36 md:-right-28 w-[260px] h-[260px]">
           <Image src={"/assets/why-model-1.png"} alt="" layout="fill" />
         </span>
         {/* content */}
         <div className="flex items-center justify-center flex-col-reverse lg:flex-row lg:space-x-[70px] lg:h-[473px]">
           {/* illustration */}
-          <div className="w-full h-[330px] md:h-[473px] lg:h-full lg:w-[650px] relative">
+          <motion.div
+            className="w-full h-[330px] md:h-[473px] lg:h-full lg:w-[650px] relative"
+            initial={whyVariants.illustration.hide}
+            whileInView={whyVariants.illustration.show}
+          >
             <Image
               src={"/assets/why-img.png"}
               alt="illustration on why to choose crappo"
               layout="fill"
             />
-          </div>
+          </motion.div>
           {/* text */}
           <div className="lg:h-[318.89px] lg:w-[480px] text-center lg:text-left">
             <h2 className="text-h2 text-white mb-6">
