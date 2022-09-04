@@ -22,7 +22,7 @@ const HeroSection = () => {
   return (
     <section
       className="bg-[url('/assets/hero-bg.png')] h-full
-       xl:h-[850px] px-5 md:px-7 xl:px-0 pt-8 md:pt-16 pb-16 lg:pb-0 border-white border
+       xl:h-[850px] px-5 md:px-7 xl:px-0 pt-8 md:pt-16 pb-16 lg:pb-0
     "
     >
       <NavBar />
@@ -74,7 +74,7 @@ const HeroSection = () => {
               priority={true}
             />
 
-            <div className="absolute hidden lg:flex w-full h-full -z-10 -bottom-[220px] -left-[300px] rotate-12">
+            <div className="absolute hidden lg:flex w-full h-full -z-10 -bottom-[280px] -left-[400px] rotate-12">
               <Image src={"/assets/hero-ribbon-1.png"} alt="" layout="fill" />
             </div>
           </motion.div>
