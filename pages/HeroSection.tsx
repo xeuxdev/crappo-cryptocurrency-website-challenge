@@ -22,7 +22,6 @@ const HeroSection = () => {
               initial={heroVariant.blackFriday.hide}
               whileInView={heroVariant.blackFriday.show}
               viewport={{ once: true }}
-              
             >
               <span className="h-full px-2 pt-[2px] pb-[2px] uppercase bg-white grid place-items-center text-primary rounded-full text-[12px] xs:text-body_sm_rg">
                 75% save
@@ -33,7 +32,7 @@ const HeroSection = () => {
             </motion.div>
             <div>
               <motion.h1
-                className="text-h3 md:text-h1 text-white mb-5"
+                className="text-h3 md:text-h1 md:text-center lg:text-left text-white mb-5"
                 initial={heroVariant.heroText.hide}
                 whileInView={heroVariant.heroText.show}
                 viewport={{ once: true }}
