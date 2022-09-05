@@ -1,6 +1,11 @@
 import type { NextPage } from "next"
 import Head from "next/head"
-import { HeroSection, WhySection, EarningRateSection } from "./export"
+import {
+  HeroSection,
+  WhySection,
+  EarningRateSection,
+  CryptoCurrencyList,
+} from "./export"
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +26,7 @@ const Home: NextPage = () => {
         <HeroSection />
         <WhySection />
         <EarningRateSection />
+        <CryptoCurrencyList />
       </main>
 
       <footer className={""}></footer>
