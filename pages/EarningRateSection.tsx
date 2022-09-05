@@ -1,11 +1,15 @@
 import PlainButton from "../components/PlainButton"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
+import { earningRateVariant } from "../variants/earningRateVariant"
 
 const EarningRateSection = () => {
   return (
     <>
-      <section className="bg-primary h-[644px] xs:h-[582px] md:h-[495px] lg:h-[457px] w-full px-5 md:px-7 xl:px-0  ">
-        <motion.div className=" pt-20 lg:pt-[100px]"
+      <section className="bg-primary h-[644px] xs:h-[582px] md:h-[495px] lg:h-[457px] w-full px-5 md:px-7 xl:px-0 overflow-hidden drop-shadow-custom ">
+        <motion.div
+          className=" pt-20 lg:pt-[100px]"
+          initial={earningRateVariant.head.hide}
+          whileInView={earningRateVariant.head.show}
         >
           <div className="text-center md:w-[741px] space-y-6 mx-auto mb-16">
             <h3 className="text-h2 text-white ">Check how much you can earn</h3>
@@ -17,7 +21,11 @@ const EarningRateSection = () => {
         </motion.div>
 
         {/* calculate */}
-        <div className="lg:w-[942px] mx-auto">
+        <motion.div
+          className="lg:w-[942px] mx-auto"
+          initial={earningRateVariant.calculate.hide}
+          whileInView={earningRateVariant.calculate.show}
+        >
           <form className="flex items-start lg:items-center flex-col lg:flex-row lg:space-x-12 bg-white w-full py-6 lg:py-0 min-h-[155px] mx-auto rounded-t-2xl  px-5 md:px-7 lg:px-12">
             <div className="h-[38px] w-full lg:w-[403px] space-y-2 relative mb-4 lg:mb-0">
               <input
@@ -42,23 +50,28 @@ const EarningRateSection = () => {
             </div>
             <PlainButton name="calculate" />
           </form>
-        </div>
+        </motion.div>
       </section>
       {/* estimated revenue */}
-      <section className=" px-5 md:px-7 xl:px-0 drop-shadow-custom mx-auto ">
+      <motion.section
+        className=" px-5 md:px-7 xl:px-0 drop-shadow-custom mx-auto "
+        initial={earningRateVariant.revenue.hide}
+        whileInView={earningRateVariant.revenue.show}
+      >
         <div className="min-h-[216px] rounded-b-2xl w-full bg-white py-12 px-5 md:px-7 lg:px-12  mb-[100px] lg:w-[942px] mx-auto">
           <p className="text-accent text-title_sm">
             ESTIMATED 24 HOUR REVENUE:
           </p>
-          <p className="tracking-[4%] text-h3">
-            0.055 130 59 ETH
-            <span className="text-accent">($1275)</span>
+          <p className="tracking-[4%] text-h3 break-all whitespace-normal">
+            0.05513059
+            <span>ETH</span>
+            <span className="text-accent ml-3">($1275)</span>
           </p>
           <p className="text-gray_3 text-body_sm_rg">
             Revenue will change based on mining difficulty and Ethereum price.
           </p>
         </div>
-      </section>
+      </motion.section>
     </>
   )
 }

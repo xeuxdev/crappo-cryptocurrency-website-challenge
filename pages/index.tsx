@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/assets/logo.svg" />
       </Head>
 
-      <main className={"scroll-smooth"}>
+      <main className={"scroll-smooth overflow-x-hidden"}>
         <HeroSection />
         <WhySection />
         <EarningRateSection />

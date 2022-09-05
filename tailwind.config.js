@@ -45,7 +45,7 @@ module.exports = {
     },
     extend: {
       dropShadow: {
-        custom: "0px 20px 200px rgba(57, 23, 119, 0.05)",
+        custom: "0px 20px 200px rgba(57, 23, 119, 0.15)",
       },
     },
   },
