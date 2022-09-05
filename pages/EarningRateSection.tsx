@@ -3,7 +3,7 @@ import PlainButton from "../components/PlainButton"
 const EarningRateSection = () => {
   return (
     <>
-      <section className="bg-primary h-[644px] lg:h-[457px] w-full px-5 md:px-7 xl:px-0  ">
+      <section className="bg-primary h-[644px] xs:h-[582px] md:h-[495px] lg:h-[457px] w-full px-5 md:px-7 xl:px-0  ">
         <div className=" pt-20 lg:pt-[100px]">
           <div className="text-center md:w-[741px] space-y-6 mx-auto mb-16">
             <h3 className="text-h2 text-white ">Check how much you can earn</h3>
