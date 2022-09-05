@@ -43,7 +43,11 @@ module.exports = {
       body_sm_md: ["1rem", { lineHeight: "150%", fontWeight: "500" }],
       body_sm_rg: ["1rem", { lineHeight: "1.75rem", fontWeight: "400" }],
     },
-    extend: {},
+    extend: {
+      dropShadow: {
+        custom: "0px 20px 200px rgba(57, 23, 119, 0.05)",
+      },
+    },
   },
   plugins: [],
 }

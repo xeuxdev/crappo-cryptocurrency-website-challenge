@@ -44,9 +44,6 @@ const WhySection = () => {
               alt="illustration on why to choose crappo"
               layout="fill"
             />
-            <div className="absolute flex w-full h-full z-10 -bottom-[30px] -left-[26px] lg:-left-[54px] ">
-              <Image src={"/assets/why-ribbon.png"} alt="" layout="fill" />
-            </div>
           </motion.div>
           {/* text */}
           <div className="lg:h-[318.89px] lg:w-[480px] text-center lg:text-left">
