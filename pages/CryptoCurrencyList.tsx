@@ -12,6 +12,12 @@ const CryptoCurrencyList = () => {
 
       <div className="grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11">
         {/* bitcoin */}
+        <CryptoCard
+          image="bitcon"
+          name="Bitcoin"
+          aka="BTC"
+          description="Digital currency in which a record of transactions is maintained."
+        />
       </div>
     </section>
   )
