@@ -1,4 +1,5 @@
 import PlainButton from "../components/PlainButton"
+import {motion} from "framer-motion"
 
 const EarningRateSection = () => {
   return (
