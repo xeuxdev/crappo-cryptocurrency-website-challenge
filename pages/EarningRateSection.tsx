@@ -5,7 +5,8 @@ const EarningRateSection = () => {
   return (
     <>
       <section className="bg-primary h-[644px] xs:h-[582px] md:h-[495px] lg:h-[457px] w-full px-5 md:px-7 xl:px-0  ">
-        <div className=" pt-20 lg:pt-[100px]">
+        <motion.div className=" pt-20 lg:pt-[100px]"
+        >
           <div className="text-center md:w-[741px] space-y-6 mx-auto mb-16">
             <h3 className="text-h2 text-white ">Check how much you can earn</h3>
             <p className="text-body_st_rg text-gray_5 max-w-[620px] mx-auto">
@@ -13,7 +14,7 @@ const EarningRateSection = () => {
               Exercitation veniam consequat sunt nostrud amet.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* calculate */}
         <div className="lg:w-[942px] mx-auto">
