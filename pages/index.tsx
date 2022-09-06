@@ -5,6 +5,7 @@ import {
   WhySection,
   EarningRateSection,
   CryptoCurrencyList,
+  Features,
 } from "./export"
 
 const Home: NextPage = () => {
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
         <WhySection />
         <EarningRateSection />
         <CryptoCurrencyList />
+        <Features />
       </main>
 
       <footer className={""}></footer>
