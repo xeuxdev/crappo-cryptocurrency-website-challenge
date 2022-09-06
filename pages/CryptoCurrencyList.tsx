@@ -1,4 +1,3 @@
-import Image from "next/image"
 import CryptoCard from "../components/CryptoCard"
 
 const CryptoCurrencyList = () => {
