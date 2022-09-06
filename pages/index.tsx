@@ -1,12 +1,10 @@
 import type { NextPage } from "next"
 import Head from "next/head"
-import {
-  HeroSection,
-  WhySection,
-  EarningRateSection,
-  CryptoCurrencyList,
-  Features,
-} from "./export"
+import CryptoCurrencyList from "./CryptoCurrencyList"
+import EarningRateSection from "./EarningRateSection"
+import Features from "./Features"
+import HeroSection from "./HeroSection"
+import WhySection from "./WhySection"
 
 const Home: NextPage = () => {
   return (
