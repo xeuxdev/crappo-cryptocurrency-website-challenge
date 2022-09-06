@@ -18,16 +18,16 @@ const CryptoCurrencyList = () => {
           description="Digital currency in which a record of transactions is maintained."
         />
         <CryptoCard
-          image="ethereum"
-          name="ethereum"
-          aka="ETH"
-          description="Blockchain technology to create and run decentralized digital applications."
-        />
-        <CryptoCard
           image="litecoin"
           name="litecoin"
           aka="LTC"
           description="Cryptocurrency that enables instant payments to anyone in the world."
+        />
+        <CryptoCard
+          image="ethereum"
+          name="ethereum"
+          aka="ETH"
+          description="Blockchain technology to create and run decentralized digital applications."
         />
       </div>
     </section>
