@@ -5,14 +5,16 @@ import { earningRateVariant } from "../variants/earningRateVariant"
 const EarningRateSection = () => {
   return (
     <>
-      <section className="bg-primary h-[644px] xs:h-[582px] md:h-[495px] lg:h-[457px] w-full px-5 md:px-7 xl:px-0 overflow-hidden drop-shadow-custom ">
+      <section className="bg-primary h-[558px] xs:h-[559px] sm:h-[400px] md:h-[495px] lg:h-[457px] w-full px-5 md:px-7 xl:px-0 overflow-hidden drop-shadow-custom ">
         <motion.div
           className=" pt-20 lg:pt-[100px]"
           initial={earningRateVariant.head.hide}
           whileInView={earningRateVariant.head.show}
         >
           <div className="text-center md:w-[741px] space-y-6 mx-auto mb-16">
-            <h3 className="text-h2 text-white ">Check how much you can earn</h3>
+            <h3 className="text-h3 sm:text-h2 text-white ">
+              Check how much you can earn
+            </h3>
             <p className="text-body_st_rg text-gray_5 max-w-[620px] mx-auto">
               Let’s check your hash rate to see how much you will earn today,
               Exercitation veniam consequat sunt nostrud amet.

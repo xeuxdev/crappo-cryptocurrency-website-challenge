@@ -48,7 +48,7 @@ const WhySection = () => {
           {/* text */}
           <div className="lg:h-[318.89px] lg:w-[480px] text-center lg:text-left">
             <motion.h2
-              className="text-h2 text-white mb-6"
+              className="text-h3 sm:text-h2 text-white mb-6"
               initial={whyVariants.head.hide}
               whileInView={whyVariants.head.show}
               viewport={{ once: true }}
