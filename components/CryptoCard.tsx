@@ -12,7 +12,7 @@ const CryptoCard = (props: Props) => {
   const [svg, setSvg] = useState(false)
   return (
     <div
-      className="flex items-center flex-col w-full sm:w-[370px] h-[433px] rounded-2xl hover:bg-secondary px-6 py-12 duration-200 cursor-pointer group"
+      className="flex items-center flex-col w-full sm:w-[370px] h-[433px] rounded-2xl hover:bg-secondary px-6 py-12 duration-500 cursor-pointer group"
       onClick={() => setSvg(!svg)}
     >
       {/* icon */}
