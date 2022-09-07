@@ -4,6 +4,7 @@ import CryptoCurrencyList from "./CryptoCurrencyList"
 import EarningRateSection from "./EarningRateSection"
 import Features from "./Features"
 import HeroSection from "./HeroSection"
+import StartMining from "./StartMining"
 import WhySection from "./WhySection"
 
 const Home: NextPage = () => {
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
         <EarningRateSection />
         <CryptoCurrencyList />
         <Features />
+        <StartMining />
       </main>
 
       <footer className={""}></footer>
