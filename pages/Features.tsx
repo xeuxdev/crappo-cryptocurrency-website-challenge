@@ -1,5 +1,6 @@
 import PlainButton from "../components/PlainButton"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 const Features = () => {
   return (
