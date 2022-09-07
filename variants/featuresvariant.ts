@@ -1,4 +1,4 @@
-export const cryptoCardVariants = {
+export const featuresVariant = {
     left: {
       hide: { opacity: 0, x: -150 },
       show: {
