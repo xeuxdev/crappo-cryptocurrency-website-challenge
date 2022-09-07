@@ -30,10 +30,11 @@ const Home: NextPage = () => {
         <CryptoCurrencyList />
         <Features />
         <StartMining />
-        <Footer />
       </main>
 
-      <footer className={""}></footer>
+      <footer className={" overflow-x-hidden"}>
+        <Footer />
+      </footer>
     </>
   )
 }
