@@ -1,13 +1,14 @@
 import PlainButton from "../components/PlainButton"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import featuresVari
+import { featuresVariant } from "../variants/featuresvariant"
 
 const Features = () => {
   return (
     <section className="features bg-secondary h-full xl:h-[1874px] w-full py-[100px] relative  before:absolute before:w-[686px] before:h-[686px] before:bg-[url('/assets/features-circle-1.png')] before:top-0 before:left-[151px] before:bg-no-repeat after:absolute after:w-[325px] after:h-[325px] after:bg-[url('/assets/features-circle-2.png')] after:bottom-0 after:right-0 after:bg-no-repeat">
       {/* heading */}
-      <motion.header className="container text-center max-w-[758px] text-h3 lg:text-h2 text-white mb-[100px] px-5 md:px-7 xl:px-0 relative z-20" 
+      <motion.header
+        className="container text-center max-w-[758px] text-h3 lg:text-h2 text-white mb-[100px] px-5 md:px-7 xl:px-0 relative z-20"
         initial={}
       >
         Market sentiments, portfolio, and run the infrastructure of your choice
