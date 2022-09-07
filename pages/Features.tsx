@@ -20,7 +20,7 @@ const Features = () => {
       <div className="container min-h-[427px] flex flex-col lg:flex-row gap-[100px] mb-[120px] px-5 md:px-7 xl:px-0">
         {/* text */}
         <motion.div
-          className="w-full sm:w-[454px] h-[219px] text-center lg:text-left lg:pt-6"
+          className="w-full sm:w-[454px] h-[219px] text-center mx-auto lg:mx-0 lg:text-left lg:pt-6"
           initial={featuresVariant.left.hide}
           whileInView={featuresVariant.left.show}
           viewport={{ once: true }}
@@ -34,7 +34,7 @@ const Features = () => {
         </motion.div>
         {/* illustration */}
         <motion.div
-          className="w-full h-[400px] sm:w-[580px] sm:h-[427px] relative"
+          className="w-full h-[400px] sm:w-[580px] sm:h-[427px] mx-auto lg:mx-0 relative"
           initial={featuresVariant.fade.hide}
           whileInView={featuresVariant.fade.show}
           viewport={{ once: true }}
@@ -47,7 +47,7 @@ const Features = () => {
       <div className="min-h-[453px] flex items-center flex-col gap-[89px] lg:flex-row-reverse mb-[120px] px-5 md:px-7 xl:px-0">
         {/* text */}
         <motion.div
-          className="w-full sm:w-[456px] h-[247px] text-center lg:text-left"
+          className="w-full sm:w-[456px] h-[247px] mx-auto lg:mx-0 text-center lg:text-left"
           initial={featuresVariant.right.hide}
           whileInView={featuresVariant.right.show}
           viewport={{ once: true }}
@@ -61,7 +61,7 @@ const Features = () => {
         </motion.div>
         {/* illustraation */}
         <motion.div
-          className="w-full md:w-[710px] h-[300px] md:h-[453px] relative"
+          className="w-full md:w-[710px] h-[300px] mx-auto lg:mx-0 md:h-[453px] relative"
           initial={featuresVariant.fade.hide}
           whileInView={featuresVariant.fade.show}
           viewport={{ once: true }}
@@ -78,7 +78,7 @@ const Features = () => {
       <div className="container min-h-[334px] flex flex-col lg:flex-row gap-[100px] lg:gap-16 relative z-20">
         {/* text */}
         <motion.div
-          className="w-full sm:w-[454px] h-[295px] text-center lg:text-left lg:pt-6 px-5 md:px-7 xl:px-0"
+          className="w-full sm:w-[454px] h-[295px] text-center mx-auto lg:mx-0 lg:text-left lg:pt-6 px-5 md:px-7 xl:px-0"
           initial={featuresVariant.left.hide}
           whileInView={featuresVariant.left.show}
           viewport={{ once: true }}
@@ -94,7 +94,7 @@ const Features = () => {
         </motion.div>
         {/* illustration */}
         <motion.div
-          className="w-full h-[250px] md:w-[682px] md:h-[334px] relative"
+          className="w-full h-[250px] md:w-[682px] mx-auto lg:mx-0 md:h-[334px] relative"
           initial={featuresVariant.fade.hide}
           whileInView={featuresVariant.fade.show}
           viewport={{ once: true }}
