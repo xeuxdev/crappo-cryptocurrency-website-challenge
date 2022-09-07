@@ -6,7 +6,7 @@ import { whyVariants } from "../variants/whyVariants"
 
 const WhySection = () => {
   return (
-    <section className="bg-primary w-full min-h-[865px] py-[100px] relative px-5 md:px-7 xl:px-0 overflow-x-hidden ">
+    <section className="bg-primary w-full min-h-[865px] py-[100px] relative  overflow-x-hidden ">
       <span
         className="block absolute top-16 md:top-24 -right-36 md:-right-28 w-[260px] h-[260px]"
         aria-hidden="true"
@@ -20,7 +20,7 @@ const WhySection = () => {
         <Image src={"/assets/why-model-2.png"} alt="" layout="fill" />
       </span>
 
-      <div className="container">
+      <div className="container px-5 md:px-7 xl:px-0">
         <motion.div
           className="flex items-center flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-[99px] mb-24"
           initial={whyVariants.numbers.hide}
