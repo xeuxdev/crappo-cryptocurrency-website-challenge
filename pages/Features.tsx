@@ -9,7 +9,9 @@ const Features = () => {
       {/* heading */}
       <motion.header
         className="container text-center max-w-[758px] text-h3 lg:text-h2 text-white mb-[100px] px-5 md:px-7 xl:px-0 relative z-20"
-        initial={}
+        initial={featuresVariant.head.hide}
+        whileInView={featuresVariant.head.show}
+        viewport={{ once: true }}
       >
         Market sentiments, portfolio, and run the infrastructure of your choice
       </motion.header>
