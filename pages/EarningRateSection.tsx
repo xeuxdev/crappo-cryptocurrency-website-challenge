@@ -10,6 +10,7 @@ const EarningRateSection = () => {
           className=" pt-20 lg:pt-[100px]"
           initial={earningRateVariant.head.hide}
           whileInView={earningRateVariant.head.show}
+          viewport={{ once: true }}
         >
           <div className="text-center md:w-[741px] space-y-6 mx-auto mb-16">
             <h3 className="text-h3 sm:text-h2 text-white ">
@@ -27,6 +28,7 @@ const EarningRateSection = () => {
           className="lg:w-[942px] mx-auto"
           initial={earningRateVariant.calculate.hide}
           whileInView={earningRateVariant.calculate.show}
+          viewport={{ once: true }}
         >
           <form className="flex items-start lg:items-center flex-col lg:flex-row lg:space-x-12 bg-white w-full py-6 lg:py-0 min-h-[155px] mx-auto rounded-t-2xl  px-5 md:px-7 lg:px-12">
             <div className="h-[38px] w-full lg:w-[403px] space-y-2 relative mb-4 lg:mb-0">
@@ -59,6 +61,7 @@ const EarningRateSection = () => {
         className=" px-5 md:px-7 xl:px-0 drop-shadow-custom mx-auto "
         initial={earningRateVariant.revenue.hide}
         whileInView={earningRateVariant.revenue.show}
+        viewport={{ once: true }}
       >
         <div className="min-h-[216px] rounded-b-2xl w-full bg-white py-12 px-5 md:px-7 lg:px-12  mb-[100px] lg:w-[942px] mx-auto">
           <p className="text-accent text-title_sm">
