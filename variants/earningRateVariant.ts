@@ -16,7 +16,7 @@ export const earningRateVariant = {
     show: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 1.5 },
+      transition: { duration: 1.5, delay: 0.55, ease: "easeInOut" },
     },
   },
 }
