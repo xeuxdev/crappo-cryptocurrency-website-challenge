@@ -17,7 +17,7 @@ const HeroSection = () => {
           <div className="md:text-center lg:text-left xl:w-[588px] xl:h-[468px] mb-6 lg:mb-0">
             {/* black friday stuff */}
             <motion.div
-              className="flex items-center h-9 w-fit xs:pr-2 sm:pr-5 lg:w-[365px] 
+              className="flex items-center h-9 w-[82%] lg:w-[365px] 
             rounded-full p-1 space-x-4 bg-white/10 mb-6"
               initial={heroVariant.blackFriday.hide}
               whileInView={heroVariant.blackFriday.show}
@@ -26,7 +26,7 @@ const HeroSection = () => {
               <span className="h-full px-2 pt-[2px] pb-[2px] uppercase bg-white grid place-items-center text-primary rounded-full text-[12px] xs:text-body_sm_rg">
                 75% save
               </span>
-              <span className="text-[12px] xs:text-body_sm_rg text-white">
+              <span className="text-[12px] xs:text-body_sm_rg text-white xs:pr-2 sm:pr-5 ">
                 For the Black Friday weekend
               </span>
             </motion.div>
