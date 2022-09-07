@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/assets/logo.svg" />
       </Head>
 
-      <main className={"scroll-smooth overflow-x-hidden"}>
+      <main className={"scroll-smooth overflow-x-hidden font-rubik"}>
         <HeroSection />
         <WhySection />
         <EarningRateSection />
