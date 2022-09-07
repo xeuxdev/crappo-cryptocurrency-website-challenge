@@ -2,7 +2,7 @@ const StartMining = () => {
   return (
     <section className="bg-secondary min-h-[382px] lg:h-[382px] py-[88px] px-5 md:px-7 xl:px-0 relative">
       <div className="container">
-        <div className="min-h-[216px] relative bg-accent px-6 md:px-10 lg:px-12 py-12  rounded-2xl before:absolute before:top-0 before:left-5 before:h-[258.7px] before:w-[160px] before:bg-[url('/assets/eth.svg')] before:bg-no-repeat after:absolute after:top-20 after:right-[15px] after:h-[185.24px] after:w-[140px] after:bg-[url('/assets/bitcoin.svg')] after:bg-no-repeat">
+        <div className="min-h-[216px] relative bg-accent px-6 md:px-10 lg:px-12 py-12  rounded-2xl before:absolute before:top-0 before:left-5 before:h-[258.7px] before:w-[160px] before:bg-[url('/assets/eth.svg')] before:bg-no-repeat after:absolute after:-bottom-[50.24px] after:right-[15px] after:h-[185.24px] after:w-[140px] after:bg-[url('/assets/bitcoin.svg')] after:bg-no-repeat">
           {/* text */}
           <div className="text flex items-center flex-col lg:flex-row gap-9 relative z-20">
             {/* start mining */}
