@@ -1,7 +1,23 @@
 import { motion } from "framer-motion"
+import { useState } from "react"
 import { startMiningvariant } from "../variants/startMiningVariant"
 
 const StartMining = () => {
+  const [email, setEmail] = useState("")
+  const [error, setError] = useState("")
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault()
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+
+    if (!email || email === "") {
+      setError("Please Enter Your Email")
+    } else if (!email.match(pattern)) {
+      setError("Please enter a Valid Email")
+    } else {
+      setError("")
+    }
+  }
   return (
     <section className="bg-primary min-h-[382px] lg:h-[382px] py-[88px] px-5 md:px-7 xl:px-0 relative before:absolute before:inset-0 before:h-full before:w-full before:bg-[url('/assets/newsletter-bg.png')] before:bg-no-repeat">
       <div className="container">
@@ -32,13 +48,23 @@ const StartMining = () => {
               whileInView={startMiningvariant.right.show}
               viewport={{ once: true }}
             >
-              <form className="w-full gap-10 flex items-center flex-col lg:flex-row ">
+              <form
+                className="w-full gap-10 flex items-center flex-col lg:flex-row "
+                onSubmit={handleSubmit}
+              >
                 <div className="h-[38px] w-full md:w-[374px] space-y-2 relative">
                   <input
                     type="text"
                     placeholder="Enter your email"
+                    onFocus={() => setError("")}
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
                     className="text-body_sm_rg text-white placeholder:text-white/40 bg-accent outline-none"
                   />
+                  <span className="absolute -top-7 left-0 block text-red text-[14px] italic">
+                    {error}
+                  </span>
+
                   <span className="block w-full h-[1px] bg-gray_5 absolute left-0 bottom-0"></span>
                 </div>
                 <button className="py-[14px] px-[32px] h-[55px] w-[152px] text-primary bg-white text-body_st_md rounded-full capitalize">

@@ -26,6 +26,7 @@ module.exports = {
       primary: "hsl(240, 54%, 11%)",
       secondary: "hsl(261, 88%, 23%)",
       accent: "hsl(220, 80%, 56%)",
+      red: "hsl(0, 90%, 50%)",
     },
     fontFamily: {
       rubik: ["'Rubik', sans-serif"],
