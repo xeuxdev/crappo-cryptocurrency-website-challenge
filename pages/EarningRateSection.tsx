@@ -30,8 +30,8 @@ const EarningRateSection = () => {
           whileInView={earningRateVariant.calculate.show}
           viewport={{ once: true }}
         >
-          <form className="flex items-start lg:items-center flex-col lg:flex-row lg:space-x-12 bg-white w-full py-6 lg:py-0 min-h-[155px] mx-auto rounded-t-2xl  px-5 md:px-7 lg:px-12">
-            <div className="h-[38px] w-full lg:w-[403px] space-y-2 relative mb-4 lg:mb-0">
+          <form className="flex items-start md:items-center flex-col lg:flex-row lg:space-x-12 bg-white w-full py-6 lg:py-0 min-h-[155px] mx-auto rounded-t-2xl  px-5 md:px-7 lg:px-12">
+            <div className="h-[38px] w-full md:w-[403px] space-y-2 relative mb-4 lg:mb-0">
               <input
                 type="number"
                 placeholder="Enter your hash rate"
@@ -39,7 +39,7 @@ const EarningRateSection = () => {
               />
               <span className="block w-full h-[1px] bg-gray_5 absolute left-0 bottom-0"></span>
             </div>
-            <div className="h-[38px] w-full lg:w-[200px] space-y-2 relative mb-4 lg:mb-0">
+            <div className="h-[38px] w-full md:w-[200px] space-y-2 relative mb-4 lg:mb-0">
               <select
                 name="select"
                 id="select"
