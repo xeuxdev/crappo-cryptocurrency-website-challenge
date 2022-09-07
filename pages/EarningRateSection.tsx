@@ -43,7 +43,7 @@ const EarningRateSection = () => {
               <select
                 name="select"
                 id="select"
-                className="py-1 text-primary text-body_lg_rg outline-none pr-6"
+                className="py-1 text-primary text-body_lg_rg outline-none pl-auto"
               >
                 <option value="TH/s">Th/s</option>
                 <option value="GB/s">Gh/s</option>
@@ -67,9 +67,8 @@ const EarningRateSection = () => {
           <p className="text-accent text-title_sm">
             ESTIMATED 24 HOUR REVENUE:
           </p>
-          <p className="tracking-[4%] text-h3 break-all whitespace-normal">
-            0.05513059
-            <span>ETH</span>
+          <p className="flex flex-col sm:flex-rowtracking-[4%] text-h3 break-all whitespace-normal">
+            <span>0.05513059ETH</span>
             <span className="text-accent ml-3">($1275)</span>
           </p>
           <p className="text-gray_3 text-body_sm_rg">
