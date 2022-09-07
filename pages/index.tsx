@@ -3,6 +3,7 @@ import Head from "next/head"
 import CryptoCurrencyList from "./CryptoCurrencyList"
 import EarningRateSection from "./EarningRateSection"
 import Features from "./Features"
+import Footer from "./Footer"
 import HeroSection from "./HeroSection"
 import StartMining from "./StartMining"
 import WhySection from "./WhySection"
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
         <CryptoCurrencyList />
         <Features />
         <StartMining />
+        <Footer />
       </main>
 
       <footer className={""}></footer>
