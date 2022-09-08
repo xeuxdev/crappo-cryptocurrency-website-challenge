@@ -2,7 +2,7 @@ import PlainButton from "../components/PlainButton"
 import Image from "next/image"
 import { motion } from "framer-motion"
 //@ts-ignore
-import { featuresVariant } from "../variants/featuresVariant"
+import { featureVariant } from "../variants/featuresVariant"
 
 const Features = () => {
   return (
@@ -10,8 +10,8 @@ const Features = () => {
       {/* heading */}
       <motion.header
         className="container text-center max-w-[758px] text-h3 lg:text-h2 text-white mb-[100px] px-5 md:px-7 xl:px-0 relative z-20"
-        initial={featuresVariant.head.hide}
-        whileInView={featuresVariant.head.show}
+        initial={featureVariant.head.hide}
+        whileInView={featureVariant.head.show}
         viewport={{ once: true }}
       >
         Market sentiments, portfolio, and run the infrastructure of your choice
@@ -22,8 +22,8 @@ const Features = () => {
         {/* text */}
         <motion.div
           className="w-full sm:w-[454px] h-[219px] text-center mx-auto lg:mx-0 lg:text-left lg:pt-6"
-          initial={featuresVariant.left.hide}
-          whileInView={featuresVariant.left.show}
+          initial={featureVariant.left.hide}
+          whileInView={featureVariant.left.show}
           viewport={{ once: true }}
         >
           <p className="text-h3 text-white mb-6">Invest Smart</p>
@@ -36,8 +36,8 @@ const Features = () => {
         {/* illustration */}
         <motion.div
           className="w-full h-[400px] sm:w-[580px] sm:h-[427px] mx-auto lg:mx-0 relative"
-          initial={featuresVariant.fade.hide}
-          whileInView={featuresVariant.fade.show}
+          initial={featureVariant.fade.hide}
+          whileInView={featureVariant.fade.show}
           viewport={{ once: true }}
         >
           <Image src={"/assets/feature-1-img.png"} alt="chart" layout="fill" />
@@ -49,8 +49,8 @@ const Features = () => {
         {/* text */}
         <motion.div
           className="w-full sm:w-[456px] h-[247px] mx-auto lg:mx-0 text-center lg:text-left"
-          initial={featuresVariant.right.hide}
-          whileInView={featuresVariant.right.show}
+          initial={featureVariant.right.hide}
+          whileInView={featureVariant.right.show}
           viewport={{ once: true }}
         >
           <p className="text-h3 text-white mb-6">Detailed Statistics</p>
@@ -63,8 +63,8 @@ const Features = () => {
         {/* illustraation */}
         <motion.div
           className="w-full md:w-[710px] h-[300px] mx-auto lg:mx-0 md:h-[453px] relative"
-          initial={featuresVariant.fade.hide}
-          whileInView={featuresVariant.fade.show}
+          initial={featureVariant.fade.hide}
+          whileInView={featureVariant.fade.show}
           viewport={{ once: true }}
         >
           <Image
@@ -80,8 +80,8 @@ const Features = () => {
         {/* text */}
         <motion.div
           className="w-full sm:w-[454px] h-[295px] text-center mx-auto lg:mx-0 lg:text-left lg:pt-6 px-5 md:px-7 xl:px-0"
-          initial={featuresVariant.left.hide}
-          whileInView={featuresVariant.left.show}
+          initial={featureVariant.left.hide}
+          whileInView={featureVariant.left.show}
           viewport={{ once: true }}
         >
           <p className="text-h3 text-white mb-6">
@@ -96,8 +96,8 @@ const Features = () => {
         {/* illustration */}
         <motion.div
           className="w-full h-[250px] md:w-[682px] mx-auto lg:mx-0 md:h-[334px] relative"
-          initial={featuresVariant.fade.hide}
-          whileInView={featuresVariant.fade.show}
+          initial={featureVariant.fade.hide}
+          whileInView={featureVariant.fade.show}
           viewport={{ once: true }}
         >
           <Image src={"/assets/feature-3-img.png"} alt="chart" layout="fill" />
