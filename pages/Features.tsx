@@ -1,6 +1,7 @@
 import PlainButton from "../components/PlainButton"
 import Image from "next/image"
 import { motion } from "framer-motion"
+//@ts-ignore
 import { featuresVariant } from "../variants/featuresVariant"
 
 const Features = () => {
