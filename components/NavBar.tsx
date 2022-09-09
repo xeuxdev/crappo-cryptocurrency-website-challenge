@@ -106,7 +106,7 @@ const navItem = {
 function MobileMenu() {
   return (
     <motion.div
-      className="fixed top-0 right-0 w-3/4 h-full lg:hidden bg-secondary z-20 flex items-center justify-center flex-col gap-14"
+      className="fixed top-0 right-0 w-3/4 h-full lg:hidden bg-secondary z-40 flex items-center justify-center flex-col gap-14 overflow-hidden"
       initial={{ opacity: 0 }}
       variants={menuVariant}
       whileInView={"show"}

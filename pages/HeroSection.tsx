@@ -53,7 +53,7 @@ const HeroSection = () => {
           </div>
           {/* image */}
           <motion.div
-            className=" w-full h-[400px] md:h-[630px] lg:h-[550px] xl:w-[604px] xl:h-[585.15px] relative z-40"
+            className=" w-full h-[400px] md:h-[630px] lg:h-[550px] xl:w-[604px] xl:h-[585.15px] relative z-30"
             initial={heroVariant.heroImage.hide}
             whileInView={heroVariant.heroImage.show}
             viewport={{ once: true }}
