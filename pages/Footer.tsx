@@ -51,7 +51,7 @@ const Footer = () => {
               We accept following payment systems
             </p>
             {/* image  */}
-            <div className="flex items-center space-x-6">
+            <div className="flex items-center justify-around md:justify-start md:space-x-6">
               <div>
                 <Image
                   src={"/assets/visa.png"}
