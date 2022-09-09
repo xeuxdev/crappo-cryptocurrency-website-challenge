@@ -31,13 +31,13 @@ const StartMining = () => {
           <div className="text flex items-center flex-col lg:flex-row gap-9 relative z-20">
             {/* start mining */}
             <motion.div
-              className="w-full sm:w-[501px] h-[120px] text-center lg:text-left space-y-4 text-white"
+              className="w-full sm:w-[501px] min-h-[120px] text-center lg:text-left space-y-4 text-white"
               initial={startMiningvariant.left.hide}
               whileInView={startMiningvariant.left.show}
               viewport={{ once: true }}
             >
               <h6 className="text-h3 ">Start mining now</h6>
-              <p className="text-body_sm_rg max-w-[348px]">
+              <p className="text-body_sm_rg max-w-[348px] mx-auto lg:mx-0">
                 Join now with CRAPPO to get the latest news and start mining now
               </p>
             </motion.div>
@@ -61,7 +61,7 @@ const StartMining = () => {
                     value={email}
                     className="text-body_sm_rg text-white placeholder:text-white/40 bg-accent outline-none"
                   />
-                  <span className="absolute -top-7 left-0 block text-red text-[14px] italic">
+                  <span className="absolute -top-6 left-0 block text-red text-[14px] italic">
                     {error}
                   </span>
 
