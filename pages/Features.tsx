@@ -60,8 +60,8 @@ const Features = () => {
           whileInView={featureVariant.left.show}
           viewport={{ once: true }}
         >
-          <p className="text-h3 text-white mb-6 text-center">Invest Smart</p>
-          <p className="text-body_sm_rg text-gray_5 mb-8 sm:w-[408px] mx-auto">
+          <p className="text-h3 text-white mb-6">Invest Smart</p>
+          <p className="text-body_sm_rg text-gray_5 mb-8 sm:w-[408px] mx-auto lg:mx-0">
             Get full statistic information about the behaviour of buyers and
             sellers will help you to make the decision.
           </p>
@@ -79,7 +79,7 @@ const Features = () => {
       </div>
 
       {/* feature-2 */}
-      <div className="min-h-[453px] flex items-center flex-col gap-[89px] lg:flex-row-reverse mb-[120px] px-5 md:px-7 xl:px-0">
+      <div className="min-h-[453px] flex items-center flex-col gap-[89px] lg:flex-row-reverse mb-[120px] px-5 md:px-7 xl:px-0 relative">
         {/* text */}
         <motion.div
           className="w-full sm:w-[456px] h-[247px] mx-auto lg:mx-0 text-center lg:text-left"
@@ -88,25 +88,27 @@ const Features = () => {
           viewport={{ once: true }}
         >
           <p className="text-h3 text-white mb-6">Detailed Statistics</p>
-          <p className="text-body_sm_rg text-gray_5 mb-8 sm:w-[408px] mx-auto">
+          <p className="text-body_sm_rg text-gray_5 mb-8 sm:w-[408px] mx-auto lg:mx-0">
             View all mining related information in realtime, at any point at any
             location and decide which polls you want to mine in.
           </p>
           <PlainButton name="Learn More" />
         </motion.div>
         {/* illustraation */}
-        <motion.div
-          className="w-full md:w-[710px] h-[300px] mx-auto lg:mx-0 md:h-[453px] relative"
-          initial={featureVariant.fade.hide}
-          whileInView={featureVariant.fade.show}
-          viewport={{ once: true }}
-        >
-          <Image
-            src={"/assets/feature-2-img.png"}
-            alt="Detailed statistics"
-            layout="fill"
-          />
-        </motion.div>
+        <div className="w-full md:w-[710px] h-[300px] mx-auto lg:mx-0 md:h-[453px] relative lg:absolute left-0">
+          <motion.div
+            className="relative w-full md:w-[555px] xl:w-[710px] h-[300px] mx-auto lg:mx-0 md:h-[453px] "
+            initial={featureVariant.fade.hide}
+            whileInView={featureVariant.fade.show}
+            viewport={{ once: true }}
+          >
+            <Image
+              src={"/assets/feature-2-img.png"}
+              alt="Detailed statistics"
+              layout="fill"
+            />
+          </motion.div>
+        </div>
       </div>
 
       {/* feature-3 */}
@@ -121,7 +123,7 @@ const Features = () => {
           <p className="text-h3 text-white mb-6">
             Grow your profit and track your investments
           </p>
-          <p className="text-body_sm_rg text-gray_5 mb-8 sm:w-[408px] mx-auto">
+          <p className="text-body_sm_rg text-gray_5 mb-8 sm:w-[408px] mx-auto lg:mx-0">
             Use advanced analytical tools. Clear TradingView charts let you
             track current and historical profit investments.
           </p>
