@@ -60,8 +60,8 @@ const Features = () => {
           whileInView={featureVariant.left.show}
           viewport={{ once: true }}
         >
-          <p className="text-h3 text-white mb-6">Invest Smart</p>
-          <p className="text-body_sm_rg text-gray_5 mb-8 sm:w-[408px]">
+          <p className="text-h3 text-white mb-6 text-center">Invest Smart</p>
+          <p className="text-body_sm_rg text-gray_5 mb-8 sm:w-[408px] mx-auto">
             Get full statistic information about the behaviour of buyers and
             sellers will help you to make the decision.
           </p>
@@ -88,7 +88,7 @@ const Features = () => {
           viewport={{ once: true }}
         >
           <p className="text-h3 text-white mb-6">Detailed Statistics</p>
-          <p className="text-body_sm_rg text-gray_5 mb-8 sm:w-[408px]">
+          <p className="text-body_sm_rg text-gray_5 mb-8 sm:w-[408px] mx-auto">
             View all mining related information in realtime, at any point at any
             location and decide which polls you want to mine in.
           </p>
@@ -121,7 +121,7 @@ const Features = () => {
           <p className="text-h3 text-white mb-6">
             Grow your profit and track your investments
           </p>
-          <p className="text-body_sm_rg text-gray_5 mb-8 sm:w-[408px]">
+          <p className="text-body_sm_rg text-gray_5 mb-8 sm:w-[408px] mx-auto">
             Use advanced analytical tools. Clear TradingView charts let you
             track current and historical profit investments.
           </p>
