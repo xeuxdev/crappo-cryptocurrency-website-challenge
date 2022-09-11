@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [live site] ("https://crappo-cryptocurrency-app.vercel.app/")
+- Live Site URL: [live site]("https://crappo-cryptocurrency-app.vercel.app/")
 
 ## My process
 
