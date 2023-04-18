@@ -1,12 +1,13 @@
 import type { NextPage } from "next"
 import Head from "next/head"
-import CryptoCurrencyList from "./CryptoCurrencyList"
-import EarningRateSection from "./EarningRateSection"
-import Features from "./Features"
-import Footer from "./Footer"
-import HeroSection from "./HeroSection"
-import StartMining from "./StartMining"
-import WhySection from "./WhySection"
+import Footer from "../components/pageComponents/Footer"
+import HeroSection from "../components/pageComponents/HeroSection"
+import WhySection from "../components/pageComponents/WhySection"
+import EarningRateSection from "../components/pageComponents/EarningRateSection"
+import CryptoCurrencyList from "../components/pageComponents/CryptoCurrencyList"
+import Features from "../components/pageComponents/Features"
+import StartMining from "../components/pageComponents/StartMining"
+
 
 const Home: NextPage = () => {
   return (
